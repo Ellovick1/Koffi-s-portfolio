@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Analysis and Math</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+     <!-- Nav Bar Start -->
+     <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container  justify-content-between">
+            <a class="nav-item nav-link navbar-brand" href="/index.html#home">KOFFI IDONGESIT</a>
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+                    <a class="nav-item nav-link" href="/index.html#home">Home</a>
+                    <a class="nav-item nav-link" href="/index.html#about" >About</a>
+                    <a href="/index.html#experience" class="nav-item nav-link">WHY ME</a>
+                    <a href="/index.html#blog" class="nav-item nav-link">Articles</a>
+                    <a href="/index.html#testimonial" class="nav-item nav-link">Reviews</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Nav Bar End -->
+
+
+    <!-- Blog Start -->
+    <div class="blog sub-blog" id="blog">
+        <div class="container">
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <p class="para">From Blog</p>
+                <a class="btn" href="/sub_Blog/analysis_math.html"><i class="fa fa-angle-left"></i>Back</a><br>
+                
+            </div>
+            <div class="p-5">
+                <!-- <h2>Student class enrollment with table</h2><br> -->
+                <div class="enrollment_table m-auto">
+                    <img class="" src="/img/enrollment_table.jpg" alt="enrollment_Table">
+                </div><br>
+
+                <div class="write-ups">
+                    <h5>Excel COUNTIF formula</h5>
+                    <h6>=IF(COUNTIF(range, class), "x","")</h6><br>
+                    <h5> Explanation </h5>
+                    <p>
+                        To trace students’ class enrollment in situations where they are not systematically arranged, create array of supplementary column. The supplementary range must equal the number of classes as in the first range. Spot and count enrollment for each student. In the illustration presented in G5 is 
+                    </p>
+                    <h6>=IF(COUNTIF($C5:$F5,G$4), "x","")</h6><br>
+                    <p>
+                        Once target class have been spotted and identified within the range (C5: f5), execute auto-select to pick and enroll each of the students into the supplementary column ranges; (G5:L5)
+                    </p>
+
+                    <h5>Operationalizing this formula</h5>
+                    <p>
+                        Note: The essence of this illustration is to demonstrate how to order entries which are not systematically arrange. This problem can be approached in a number of ways.
+                        The COUNTIF function provides a logical procedure to operationalize the formula as contained in cell G5. The syntax counts the classes (Bio, Phys, Math etc) in the range of column (C5:F5) 
+                    </p>
+                    <h6>=IF(COUNTIF($C5:$F5,G$4), "x","")</h6><br>
+                    <p>
+                        To do this, structure the reference as shown in cell G5. You can now copy the syntax over the supplementary column up to L5 and down to L14. The classes are then picked from the defined cell and columns; C5:F5 into the cells and columns; G5:L5.
+                        The COUNTIF function returns a positive value when the criterion defined is fulfilled and the IF syntax considers a positive result as TRUE only to return “x”. In the event that a criterion is not fulfilled, the COUNTIF syntax returns zero while the IF returns an empty cell (“”)
+                    </p>
+                    <h5>Formula to sum enrollment</h5>
+                    <p> The get the total count of students enrolled for each class, the formula in roll 15, cell G15 is structured as scheduled below</p>
+                    <h5> =COUNTIF(Table1[Eng], "x")</h5>
+
+                    <p> The defined column range sums automatically. Similarly, a case without a defined column range will be as scheduled below</p>
+                    <h5> =COUNTIF(G5:G14, "x")</h5>
+
+
+
+                </div>
+
+            </div>
+            <div class="align-content-center text-center mt-2 wow zoomIn" data-wow-delay="0.1s">
+                <a class="btn" href="/sub_Blog/analysis_math.html"><i class="fa fa-angle-left"></i>Back</a>
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+
+     <!-- Footer Start -->
+     <div class="footer mt-0 wow fadeIn" data-wow-delay="0.3s">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="footer-info">
+                    <h2>Idongesit Koffi</h2>
+                    <div class="footer-menu">
+                        <p>+234-706-455-1848</p>
+                        <p>koffijnr@gmail.com</p>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="container copyright">
+                <p>&copy; <a href="#">Your Site Name</a>, All Right Reserved | Designed By <a href="https://ezekielelom.com">Ellovick</a></p>
+                <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>                    
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+     <!-- Back to top button -->
+     <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        
+     <!-- Pre Loader -->
+     <!-- <div id="loader" class="show">
+         <div class="loader"></div>
+     </div> -->
+
+     
+     <!-- JavaScript Libraries -->
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+     
+     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+     
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+     <script src="lib/easing/easing.min.js"></script>
+     <script src="lib/wow/wow.min.js"></script>
+     <script src="lib/waypoints/waypoints.min.js"></script>
+     <script src="lib/typed/typed.min.js"></script>
+     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+     <script src="lib/isotope/isotope.pkgd.min.js"></script>
+     <script src="lib/lightbox/js/lightbox.min.js"></script>
+     
+     <!-- Contact Javascript File -->
+     <script src="mail/jqBootstrapValidation.min.js"></script>
+     <script src="mail/contact.js"></script>
+
+     <!-- Template Javascript -->
+     <script src="js/main.js"></script>
+</body>
+</html>

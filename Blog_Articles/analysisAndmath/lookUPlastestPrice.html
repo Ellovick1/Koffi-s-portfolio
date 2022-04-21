@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Analysis and Math</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+     <!-- Nav Bar Start -->
+     <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container  justify-content-between">
+            <a class="nav-item nav-link navbar-brand" href="/index.html#home">KOFFI IDONGESIT</a>
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+                    <a class="nav-item nav-link" href="/index.html#home">Home</a>
+                    <a class="nav-item nav-link" href="/index.html#about" >About</a>
+                    <a href="/index.html#experience" class="nav-item nav-link">WHY ME</a>
+                    <a href="/index.html#blog" class="nav-item nav-link">Articles</a>
+                    <a href="/index.html#testimonial" class="nav-item nav-link">Reviews</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Nav Bar End -->
+
+
+    <!-- Blog Start -->
+    <div class="blog sub-blog" id="blog">
+        <div class="container">
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <p class="para">From Blog</p>
+                <a class="btn" href="/sub_Blog/analysis_math.html"><i class="fa fa-angle-left"></i>Back</a><br>
+            </div>
+            <div class="p-2">
+                <h2></h2>
+                <div class="countif_function">
+                    <img class="" src="/img/lookup price.jpg" alt="text-numbers">
+                </div><br>
+
+                <div class="write-ups">
+                    <h5>The formula</h5>
+                    <p>=LOOKUP (2,1/(Item="Pen"),price)</p><br>
+                    
+                    <h5>Explanation</h5>
+                    <p>To look up the current price listing for a commodity, with recent items entered at the rear. In such situations, the LOOKUP function can be used. For instance; the formula in G7 is as scheduled below</p>
+                    <h4>=LOOKUP(2,1/(item=F7),price)</h4>
+                    <p>Here, the array B5: B11 represents the commodities while D5: D11 is the price</p><br>
+                    
+                    <h5>To use the formula</h5>
+                    <p>The Excel LOOKUP is a built-in function which returns an entry from an array; either a column or row.  The function pre-supposes an accurate ordering of entries for pairing. If the LOOKUP value is the biggest value in the LOOKUP range, the custom operation is to return to the previous value. This formula executes this process by generating a range containing 1s and error only. It purposely searches for the number 2 which will never be established.</p><br>
+                    <p>LOOKUP scouts the range for 2, since it is not established; it returns to the previous value which is 1 to replace the content at similar spot in the outcome range.</p><br>
+
+                    <p>Initially, this statement is expressed as</p>
+                    <h4>Item=F7</h4>
+                    <p>where f7 contains “Pencil“, the outcome is</p><br>
+
+                    <h6>{FALSE; TRUE; FALSE;TRUE;FALSE;FALSE;TRUE;FALSE}</h6>
+                    <p>This number is then used to divide 1 to supply the ultimate LOOKUP range</p><br>
+
+                    <h6>{#DIV/0!;1;#DIV/0!;1;#DIV/0!;#DIV/0!;1;#DIV/0!}</h6><br>
+
+                    <p>The LOOKUP function searches for 2, then returns the final 1(the seventh spot in the range) and replaces the seventh commodity on the LOOKUP range with price $30. To read more about the concept of intentionally looking for a value that won't ever appear, read about.</p>
+                    
+                </div>
+
+            </div>
+            <div class="align-content-center text-center mt-2 wow zoomIn" data-wow-delay="0.1s">
+                <a class="btn" href="/sub_Blog/analysis_math.html"><i class="fa fa-angle-left"></i>Back</a>
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+
+     <!-- Footer Start -->
+     <div class="footer mt-0 wow fadeIn" data-wow-delay="0.3s">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="footer-info">
+                    <h2>Idongesit Koffi</h2>
+                    <div class="footer-menu">
+                        <p>+234-706-455-1848</p>
+                        <p>koffijnr@gmail.com</p>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="container copyright">
+                <p>&copy; <a href="#">Your Site Name</a>, All Right Reserved | Designed By <a href="https://ezekielelom.com">Ellovick</a></p>
+                <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>                    
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+     <!-- Back to top button -->
+     <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        
+     <!-- Pre Loader -->
+     <!-- <div id="loader" class="show">
+         <div class="loader"></div>
+     </div> -->
+
+     
+     <!-- JavaScript Libraries -->
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+     
+     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+     
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+     <script src="lib/easing/easing.min.js"></script>
+     <script src="lib/wow/wow.min.js"></script>
+     <script src="lib/waypoints/waypoints.min.js"></script>
+     <script src="lib/typed/typed.min.js"></script>
+     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+     <script src="lib/isotope/isotope.pkgd.min.js"></script>
+     <script src="lib/lightbox/js/lightbox.min.js"></script>
+     
+     <!-- Contact Javascript File -->
+     <script src="mail/jqBootstrapValidation.min.js"></script>
+     <script src="mail/contact.js"></script>
+
+     <!-- Template Javascript -->
+     <script src="js/main.js"></script>
+</body>
+</html>
