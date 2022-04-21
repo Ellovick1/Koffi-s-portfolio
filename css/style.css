@@ -1567,6 +1567,7 @@ a:focus {
 
 .write-ups{
     max-width: 50rem;
+    text-align: justify;
     margin: auto;
 }
 
