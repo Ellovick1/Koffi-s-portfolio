@@ -13,17 +13,24 @@
     
     
     // Initiate the wowjs
-    new WOW().init();
+    new WOW().init(); //wow is a JavaScript library that generates CSS animations when you scroll 
     
     
     // Back to top button
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 200) {
-            $('.back-to-top').fadeIn('slow');
+        //When the scroll event is clicked or when we scroll down, 
+        //we check if the current position of the scroll bar is
+        // greater than 200 then scroll-to-top is displayed else it will be hidden
+    $(window).scroll(function () { 
+        if ($(this).scrollTop() > 200) { 
+            $('.back-to-top').fadeIn('slow'); // the items fades in slowly
         } else {
-            $('.back-to-top').fadeOut('slow');
+            $('.back-to-top').fadeOut('slow'); // the items fades out slowly
         }
     });
+         //scrollTop() method is used to get the current position of the scroll bar and the integer value 0 is
+         // the position where you reach on clicking the link. 
+         //I set the duration of the effect as 1500 milliSeconds, i.e 15secs.
+         // i used an animation method call easeInOutExpo
     $('.back-to-top').click(function () {
         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;
@@ -31,11 +38,11 @@
     
     
     // Sticky Navbar
-    $(window).scroll(function () {
+    $(window).scroll(function () { // when navbar is greater than zero, the navbar becomes sticky
         if ($(this).scrollTop() > 0) {
             $('.navbar').addClass('nav-sticky');
         } else {
-            $('.navbar').removeClass('nav-sticky');
+            $('.navbar').removeClass('nav-sticky');//when navbar is less than zero, the navbar is no longer sticky
         }
     });
     
@@ -71,11 +78,11 @@
     
     
     // Skills
-    $('.skills').waypoint(function () {
-        $('.progress .progress-bar').each(function () {
-            $(this).css("width", $(this).attr("aria-valuenow") + '%');
-        });
-    }, {offset: '80%'});
+    // $('.skills').waypoint(function () {
+    //     $('.progress .progress-bar').each(function () {
+    //         $(this).css("width", $(this).attr("aria-valuenow") + '%');
+    //     });
+    // }, {offset: '80%'});
 
 
     // Testimonials carousel
