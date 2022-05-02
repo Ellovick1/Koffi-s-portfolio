@@ -1503,6 +1503,7 @@ a:focus {
 .blog .blog-item:hover img {
     transform: scale(1.1);
 }
+ 
 
 .blog .blog-text {
     position: relative;
