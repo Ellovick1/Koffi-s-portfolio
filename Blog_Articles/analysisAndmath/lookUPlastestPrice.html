@@ -60,25 +60,25 @@
 
                 <div class="write-ups">
                     <h5>The formula</h5>
-                    <p>=LOOKUP (2,1/(Item="Pen"),price)</p><br>
+                    <p>=LOOKUP (2,1/(Item="Pen"),price)</p>
                     
                     <h5>Explanation</h5>
                     <p>To look up the current price listing for a commodity, with recent items entered at the rear. In such situations, the LOOKUP function can be used. For instance; the formula in G7 is as scheduled below</p>
                     <h4>=LOOKUP(2,1/(item=F7),price)</h4>
-                    <p>Here, the array B5: B11 represents the commodities while D5: D11 is the price</p><br>
+                    <p>Here, the array B5: B11 represents the commodities while D5: D11 is the price</p>
                     
                     <h5>To use the formula</h5>
-                    <p>The Excel LOOKUP is a built-in function which returns an entry from an array; either a column or row.  The function pre-supposes an accurate ordering of entries for pairing. If the LOOKUP value is the biggest value in the LOOKUP range, the custom operation is to return to the previous value. This formula executes this process by generating a range containing 1s and error only. It purposely searches for the number 2 which will never be established.</p><br>
-                    <p>LOOKUP scouts the range for 2, since it is not established; it returns to the previous value which is 1 to replace the content at similar spot in the outcome range.</p><br>
+                    <p>The Excel LOOKUP is a built-in function which returns an entry from an array; either a column or row.  The function pre-supposes an accurate ordering of entries for pairing. If the LOOKUP value is the biggest value in the LOOKUP range, the custom operation is to return to the previous value. This formula executes this process by generating a range containing 1s and error only. It purposely searches for the number 2 which will never be established.</p>
+                    <p>LOOKUP scouts the range for 2, since it is not established; it returns to the previous value which is 1 to replace the content at similar spot in the outcome range.</p>
 
                     <p>Initially, this statement is expressed as</p>
                     <h4>Item=F7</h4>
-                    <p>where f7 contains “Pencil“, the outcome is</p><br>
+                    <p>where f7 contains “Pencil“, the outcome is</p>
 
                     <h6>{FALSE; TRUE; FALSE;TRUE;FALSE;FALSE;TRUE;FALSE}</h6>
-                    <p>This number is then used to divide 1 to supply the ultimate LOOKUP range</p><br>
+                    <p>This number is then used to divide 1 to supply the ultimate LOOKUP range</p>
 
-                    <h6>{#DIV/0!;1;#DIV/0!;1;#DIV/0!;#DIV/0!;1;#DIV/0!}</h6><br>
+                    <h6>{#DIV/0!;1;#DIV/0!;1;#DIV/0!;#DIV/0!;1;#DIV/0!}</h6>
 
                     <p>The LOOKUP function searches for 2, then returns the final 1(the seventh spot in the range) and replaces the seventh commodity on the LOOKUP range with price $30. To read more about the concept of intentionally looking for a value that won't ever appear, read about.</p>
                     
