@@ -16,6 +16,7 @@ h5,
 h6 {
     color: black;
 }
+
 .items li{
 list-style-type: lower-alpha;
 }
@@ -144,7 +145,8 @@ a:focus {
 }
 
 .back-to-top:hover i {
-    color: white;
+    /* color: white; */
+    color: #414141;
 }
 
 
@@ -1501,6 +1503,7 @@ a:focus {
 .blog .blog-item:hover img {
     transform: scale(1.1);
 }
+ 
 
 .blog .blog-text {
     position: relative;
