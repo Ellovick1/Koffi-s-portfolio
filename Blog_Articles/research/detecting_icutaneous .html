@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Analysis and Math</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="Free Website Template" name="keywords" />
+  <meta content="Free Website Template" name="description" />
+
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- CSS Libraries -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+  <!-- Template Stylesheet -->
+  <link href="/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Nav Bar Start -->
+  <nav class="navbar navbar-expand-lg navbar-light position-fixed">
+    <div class="container  justify-content-between">
+        <a class="nav-item nav-link navbar-brand" href="/index.html#home">KOFFI IDONGESIT</a>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+                <a class="nav-item nav-link" href="/index.html#home">Home</a>
+                <a class="nav-item nav-link" href="/index.html#about" >About</a>
+                <a href="/index.html#experience" class="nav-item nav-link">WHY ME</a>
+                <a href="/index.html#blog" class="nav-item nav-link">Articles</a>
+                <a href="/index.html#testimonial" class="nav-item nav-link">Reviews</a>
+            </ul>
+        </div>
+    </div>
+</nav>
+  <!-- Nav Bar End -->
+
+  <!-- Blog Start -->
+  <div class="blog sub-blog" id="blog">
+    <div class="container">
+      <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+        <!-- <p class="para">From Blog</p> -->
+        <!-- <br /> -->
+        <!-- <a class="btn" href="/sub_Blog/research.html"><i class="fa fa-angle-left"></i>Back</a> -->
+      </div>
+      <div class="p-3 write-ups wow zoomIn" data-wow-delay="0.1s">
+          <h4 class="">
+            Detecting Cutaneous Basal Cell Carcinomas in Ultra-high Resolution and Weakly Labeled Histopathological Images
+        </h4>
+          <h5 class="text-center">Abstract</h5>
+          <p>
+            Histological idiagnostics iand iclassification iof ibasal icell icarcinomas i(BCCs) ihas ishown igreat iadvancement
+iin icancer idiagnosis iand iare iessential ifor ithe ipercentage iproportion iassessment iof ithe iof iparticular
+ihistological igroups, irisk idetermination iof ithe irecurrence iof ithis iillness, iand icomparison iof itreatment
+iresults. iThe idiagnosis iof ibasal icell icarcinomas i(BCC), ione iof ithe imost icommon icutaneous imalignancies,
+iis ia iregular itask iperformed iby ipathologists. iImproving ihistological idiagnosis iby iproviding idiagnosis
+isuggestions ithrough icomputer-assisted idiagnoses iis ihighly iactive iin iareas iof iresearch ito iimprove isafety,
+iquality iand iefficiency. iMachine ilearning imethods iare iincreasingly ibeing iapplied iin idiagnosis idue ito itheir
+isuperior iperformance. iHowever, itypical iimages iobtained iby iscanning ihistological isections ioften ihave ia
+iresolution ithat iis inot isuitable ifor icurrent istate iof-the-art ineural inetworks. iFurthermore, inetwork
+itraining iis icomplicated iby iweak ilabels, ibecause ionly ia itiny ifraction iof ithe iimage iindicates ithe idisease
+iclass, iwhereas ia ilarge ifraction iof ithe iimage iis ihighly isimilar ito ithe inon-disease iclass. iThe iaim iof ithis
+istudy iis ito ievaluate iwhether iit iis ipossible ito idetect ibasal icell icarcinomas iin ihistological isections iusing
+iattention-based ideep ilearning imodels iand ito iovercome ithe iultra-high iresolution iand ithe iweak ilabels iof
+iwhole islide iimages. iWe idemonstrate ithat iattention-based imodels ican iindeed iyield ialmost iperfect
+iclassificationiperformance iwithianiAUCiofi0.97.
+          </p>
+          
+            <h5 class="text-center">
+                Introduction
+            </h5>
+            <p>
+                Most iauthors iuse itwo ibasic icriteria iin ithe icreation iof iclassifications iof ihistological itypes, ithe ihistological igrowth ipattern iand ihistological idifferentiation. iMost iauthors iagree ithat ithe ihistological igrowth ipattern iis iof ithe igreatest ibiological isignificance. iClassification ibased ion ithe ihistological igrowth ipattern iis iuseful iduring ithe icreation iof ithe iconcept iof ilow-risk iand ihigh-risk itypes iof iBCC i(Boulinguez et al; 2004). iA igreater iprobability iof isubclinical ispread, iaggressive ilocal ibehaviour iof ithe itumour iwith ia imore ifrequent ioccurrence iof ilocal irecurrences iand iincomplete iexcision iare icharacteristic iof ihigh-risk itypes i(Weedon and iStrutton, 2002; Saldanha et al., 2003). iHigh-risk itypes iinclude iinfiltrative i(Figure i1, iFigure i2) iand isuperficial itypes; ia irepresentative iof ithe ilow-risk itype iof iBCC iis ithe inodular itype, iin iwhich imany ihistological ivariants iwere idescribed i(Saldanha et al., 2003). iThe icriterion iof icell idifferentiation iobtained iless isupport ifor iclassification. iThe isignificance iof ithe isquamous idifferentiation iof iBCC iis icontroversial. 
+            </p>
+            <p>
+                There iis ino iaccord iof iviews iregarding ithe itype iof ibasosquamous icarcinoma. iThis itype iis imost ifrequently idescribed ias ithe isimultaneous ipresence iof ibasal icell iand isquamous icell icarcinoma i(Rosai, 2004); isome iauthors ireport ifurther iitems, ikeratotic icarcinoma i(Weedon and iStrutton, 2002) iand imetatypical icarcinoma i(Weedon and iStrutton, 2002). iRegardless iof ithis iunclear idefinition, isome iauthors iexpressed ithe iopinion ithat iBCC iassociated iwith imoderate ior isevere isquamous icell iatypia ior imalignity iis iassociated iwith ia ihigher ioccurrence iof ilocal irecurrences iand imetastatic ispread i(Weedon and iStrutton, 2002; Saldanha et al., 2003). iIn iBCC iwith ifollicular idifferentiation ithere iare iusually iless isquamous icell iatypias, ihowever iwith ino isignificance ifor ithe ibiological ibehaviour iof ithe itumour i(Saldanha et al., 2003). iThe iclassification iby iSexton i(1990) iand iRippey i(1998) idoes inot iinclude ithe ivariants iwith isquamous icell idifferentiation ias ispecial itypes iof iBCC. iMany iBCC icontain imore ihistological itypes iand ithere iis ino iconsent ifrom iwhat ipercentage iof iindividual itypes ithe iBCC ishould ibe idetermined ias ia inew ihistological ivariant. iScant iattention iwas ipaid ito ithe ievaluation iof ithe igrowth ipattern iin ithe iinvading ipart iof ithe itumour ior iin iits iborder iareas i(Sexton iet ial., i1990). iThere iare ino istudies idealing iwith ithe ireproducibility iof ithe ihistological ifindings; ithere iare ionly ia ifew istudies idealing iwith ithe idescription iof ithe isize iof ithe iprotective irim iof ithe iexcised itumour. i
+            </p>
+            
+        
+
+
+
+      </div>
+      <div class="align-content-center mt-2 text-center wow zoomIn" data-wow-delay="0.1s">
+        <a class="btn" href="/sub_Blog/research.html"><i class="fa fa-angle-left"></i>Back</a>
+      </div>
+    </div>
+  </div>
+  <!-- Blog End -->
+
+  <!-- Footer Start -->
+  <div class="footer mt-0 wow fadeIn" data-wow-delay="0.3s">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="footer-info">
+          <h2>Idongesit Koffi</h2>
+          <div class="footer-menu">
+            <p>+234-706-455-1848</p>
+            <p>koffijnr@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="container copyright">
+        <p>
+          &copy; <a href="#">Your Site Name</a>, All Right Reserved | Designed
+          By <a href="https://ezekielelom.com">Ellovick</a>
+        </p>
+        <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+  <!-- Back to top button -->
+  <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Pre Loader -->
+  <!-- <div id="loader" class="show">
+         <div class="loader"></div>
+     </div> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+  <!-- Contact Javascript File -->
+  <script src="mail/jqBootstrapValidation.min.js"></script>
+  <script src="mail/contact.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
