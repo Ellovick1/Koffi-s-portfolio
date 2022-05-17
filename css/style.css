@@ -222,7 +222,7 @@ a:focus {
     }
     
     .navbar .navbar-brand {
-        color: #ffffff;
+        color: black;
 
     }
     .navbar .navbar-brand:hover {
@@ -239,7 +239,7 @@ a:focus {
     .navbar-light .navbar-nav .nav-link,
     .navbar-light .navbar-nav .nav-link:focus {
         padding: 10px 10px 8px 10px;
-        color: #ffffff;
+        color: black;
         font-size: 15px;
         text-transform: uppercase;
         font-weight: bold;
@@ -255,7 +255,7 @@ a:focus {
 
     .navbar-light .navbar-nav .nav-link:hover,
     .navbar-light .navbar-nav .nav-link.active {
-        color: white;
+        color: black;
     }
     
     .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
@@ -268,12 +268,12 @@ a:focus {
 @media (max-width: 991.98px) {   
     .navbar {
         padding: 15px;
-        background: black !important;
+        /* background: black !important; */
     }
     
-    .navbar .navbar-brand {
-        color: white;
-    }
+    /* .navbar .navbar-brand { */
+        /* color: white; */
+    /* } */
     
     .navbar .navbar-nav {
         margin-top: 15px;
@@ -281,14 +281,14 @@ a:focus {
     
     .navbar a.nav-link {
         padding: 5px;
-        color: white;
+        color: black;
     }
     
     .navbar .dropdown-menu {
         box-shadow: none;
     }
     .navbar-light .navbar-nav .nav-link{
-        color: #ffffff;
+        color: black;
     }
 }
 
@@ -578,6 +578,29 @@ a:focus {
 .about .about-text{
     padding: 20px;
 }
+
+#about-text-right{
+    margin-right:40px ; 
+    padding-right: 140px;
+}
+#about-text-left{
+    margin-left:40px ; 
+    padding-left: 140px;
+}
+@media (max-width: 991px) {
+    #about-text-left, 
+    #about-text-right{
+        margin-left:0; 
+        padding-left: 0;
+        margin-right:0; 
+        padding-right:0;
+        padding: 10px;
+        text-align: justify;
+        
+    }
+    
+}
+
 
 .about .about-text p {
     font-size: 14px;
