@@ -58,10 +58,12 @@ a:focus {
 }
 
 .container-exp{
-    max-width: 1350px;
+    max-width: 1250px;
     margin: auto;
     padding: 90px 50px;
-    background:linear-gradient(280deg, #efefef 0%, #f2f1fb 100%);
+    /* background:linear-gradient(280deg, #efefef 0%, #f2f1fb 100%); */
+    /* background-color: rgb(131, 127, 127); */
+    background-color: rgb(43, 41, 38);
 
 }
 
@@ -302,14 +304,20 @@ a:focus {
     margin-bottom: 45px;
     padding: 120px 0 60px 0;
     overflow: hidden;
+    height: 45rem;
     /* background: linear-gradient(#CBBEAD, rgb(203,190,173)); */
-    background-color: rgb(43, 41, 38);
+    /* background-color: rgb(43, 41, 38); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
     background-position: center;
+    background-image: url(/img/lady_with_laptop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: darken;
 }
 .hero-text{
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
 }
 
 .hero .container-fluid {
@@ -331,7 +339,8 @@ a:focus {
     position: relative;
     /* padding-left: 75px; */
     display: flex;
-    align-items: flex-start;
+    top: 16rem;
+    align-items:center;
     justify-content: center;
     flex-direction: column;
 }
@@ -603,7 +612,7 @@ a:focus {
 
 
 .about .about-text p {
-    font-size: 14px;
+    font-size: 15px;
     /* padding-left: 30px; */
     /* padding-right: 20px; */
 }
@@ -1340,8 +1349,8 @@ a:focus {
 /*******************************/
 .testimonial {
     position: relative;
-    margin: 45px 0;
-    padding: 90px 0;
+    margin: 20px 0;
+    padding: 30px 30px 0  0;
     /* background: #746c61; */
 }
 
@@ -1652,21 +1661,86 @@ a:focus {
 /*******************************/
 /********* Footer CSS **********/
 /*******************************/
+.contact-us{
+    font-size: 12px;
+}
+
+.contact-us-h1{
+    position: relative;
+    left: 8rem;
+}
+.contact-bottom{
+    display: flex;
+    justify-content: center;
+    gap: 12rem;
+}
+
+.bottom-writer{
+    position: absolute;
+    /* right: 5rem; */
+ }
+ .contact-info{
+     position: absolute;
+     left: 15rem;
+     /* right: 5rem; */
+     /* margin-left: -10rem; */
+ }
+ 
+ .hq-location{
+     /* margin-right: -20rem; */
+     position: absolute;
+     right: 5rem;
+ 
+ }
+ 
+@media (max-width:1080px) {
+    .contact-us-h1{
+        position: static;
+        left: 0;
+    }
+    .contact-bottom{
+        display: block;
+        /* justify-content: center; */
+        gap: 0;
+    }
+    
+    .bottom-writer{
+        position: static;
+        /* right: 5rem; */
+     }
+     .contact-info{
+         position: static;
+         left: 0;
+         /* right: 5rem; */
+         /* margin-left: -10rem; */
+     }
+     
+     .hq-location{
+         /* margin-right: -20rem; */
+         position: static;
+         right: 0;
+     
+     }
+    
+}
+
+
 .footer {
     position: relative;
     /* margin-top: 45px; */
-    background: #746c61;
+    /* background: #746c61; */
+    background-color: rgb(43, 41, 38);
 }
 
 .footer .container-fluid {
     padding: 60px 0 0 0;
 }
 
-.footer .footer-info {
-    position: relative;
+/* .footer .footer-info { */
+    /* position: relative;
     width: 100%;
-    text-align: center;
-}
+    text-align: center; */
+/* } */
 
 .footer .footer-info h2 {
     margin-bottom: 20px;
@@ -1728,7 +1802,7 @@ a:focus {
 .footer .copyright {
     position: relative;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 130px;
     padding-top: 25px;
     padding-bottom: 25px;
 }
