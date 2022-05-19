@@ -4,7 +4,7 @@
 body {
     color: black;
     /* background: #ffffff; */
-    background: linear-gradient(#CBBEAD, rgb(203,190,173));
+    /* background: linear-gradient(#CBBEAD, rgb(203,190,173)); */
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -55,6 +55,14 @@ a:focus {
 
 .container-fluid {
     max-width: 1366px;
+}
+
+.container-exp{
+    max-width: 1350px;
+    margin: auto;
+    padding: 90px 50px;
+    background:linear-gradient(280deg, #efefef 0%, #f2f1fb 100%);
+
 }
 
 .btn {
@@ -158,7 +166,8 @@ a:focus {
     position: relative;
     transition: .5s;
     z-index: 999;
-    background-color: #111111;
+    /* background-color: #111111; */
+    background-color: white;
 }
 
 .navbar.nav-sticky {
@@ -187,7 +196,8 @@ a:focus {
     margin-top: 0;
     border: 0;
     border-radius: 0;
-    background: #f8f9fa;
+    /* background: #f8f9fa; */
+    background: black;
 }
 
 .navbar-light.nav-sticky .navbar-nav .nav-link:hover {
@@ -207,7 +217,8 @@ a:focus {
     
     .navbar.nav-sticky {
         padding: 10px 60px;
-        background: black;
+        /* background: black; */
+        background: white;
     }
     
     .navbar .navbar-brand {
@@ -221,7 +232,8 @@ a:focus {
     }
     
     .navbar.nav-sticky .navbar-brand {
-        color: white;
+        /* color: white; */
+        color: black;
     }
 
     .navbar-light .navbar-nav .nav-link,
@@ -236,7 +248,8 @@ a:focus {
     
     .navbar-light.nav-sticky .navbar-nav .nav-link,
     .navbar-light.nav-sticky .navbar-nav .nav-link:focus {
-        color: white;
+        /* color: white; */
+        color: black;
         /* background-color: white; */
     }
 
@@ -287,9 +300,10 @@ a:focus {
     position: relative;
     width: 100%;
     margin-bottom: 45px;
-    padding: 120px 0 0 0;
+    padding: 120px 0 60px 0;
     overflow: hidden;
-    background: linear-gradient(#CBBEAD, rgb(203,190,173));
+    /* background: linear-gradient(#CBBEAD, rgb(203,190,173)); */
+    background-color: rgb(43, 41, 38);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -463,7 +477,7 @@ a:focus {
 /*******************************/
 .section-header {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 90px;
 }
 
 .section-header h2 {
@@ -562,11 +576,13 @@ a:focus {
 }
 
 .about .about-text{
-    padding: 15px;
+    padding: 20px;
 }
 
 .about .about-text p {
-    font-size: 16px;
+    font-size: 14px;
+    /* padding-left: 30px; */
+    /* padding-right: 20px; */
 }
 
 .about .skills {
@@ -620,13 +636,17 @@ a:focus {
 /*******************************/
 .experience {
     position: relative;
-    padding: 45px 0 15px 0;
+    padding: 135px 0 45px 0;
     margin-bottom: 50px;
+    background-color: white;
+    /* background-color: #efefef; */
 }
 
 .experience .timeline {
     position: relative;
-    width: 100%;
+    /* width: 100%; */
+    /* padding: 100px 150px; */
+    /* background:linear-gradient(280deg, #d6d5d5 0%, #f2f1fb 100%) ; */
 }
 
 /* .experience .timeline::after {
@@ -643,8 +663,9 @@ a:focus {
 .experience .timeline .timeline-item {
     /* position: relative; */
     background: inherit;
-    width: 50%;
+    width: 45%;
     margin-bottom: 10px;
+    margin-right: 15px;
 }
 
 .experience .timeline .timeline-item.left {
@@ -714,11 +735,12 @@ a:focus {
 } */
 
 .experience .timeline .timeline-text {
-    padding: 30px;
-    background: #ffffff;
+    padding: 50px 90px;
+    /* background: #f1eeea; */
+    background: white;
     position: relative;
     /* border-right: 5px solid #dddddd; */
-    box-shadow: 0 0 60px rgba(0, 0, 0, .08);
+    box-shadow: 0 0 1px rgba(0, 0, 0, .3);
 }
 
 .experience .timeline .timeline-item.right .timeline-text {
@@ -1471,7 +1493,8 @@ a:focus {
     position: relative;
     width: 100%;
     padding: 45px 0 15px 0;
-    /* background: red; */
+    /* background: #a0927e; */
+    background: rgb(116 110 100);
 }
 
 .sub-blog{
@@ -1508,7 +1531,7 @@ a:focus {
 .blog .blog-text {
     position: relative;
     padding: 30px;
-    background: white;
+    background: #cec6be;
     /* border-radius: 0 0 30px 30px; */
     border-right: 1px solid rgba(0, 0, 0, .07);
     border-bottom: 1px solid rgba(0, 0, 0, .07);
