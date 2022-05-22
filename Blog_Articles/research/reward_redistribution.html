@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Analysis and Math</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="Free Website Template" name="keywords" />
+  <meta content="Free Website Template" name="description" />
+
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- CSS Libraries -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+  <!-- Template Stylesheet -->
+  <link href="/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Nav Bar Start -->
+  <nav class="navbar navbar-expand-lg navbar-light position-fixed">
+    <div class="container  justify-content-between">
+        <a class="nav-item nav-link navbar-brand" href="/index.html#home">KOFFI IDONGESIT</a>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+                <a class="nav-item nav-link" href="/index.html#home">Home</a>
+                <a class="nav-item nav-link" href="/index.html#about" >About</a>
+                <a href="/index.html#experience" class="nav-item nav-link">WHY ME</a>
+                <a href="/index.html#blog" class="nav-item nav-link">Articles</a>
+                <a href="/index.html#testimonial" class="nav-item nav-link">Reviews</a>
+            </ul>
+        </div>
+    </div>
+</nav>
+  <!-- Nav Bar End -->
+
+  <!-- Blog Start -->
+  <div class="blog sub-blog" id="blog">
+    <div class="container">
+      <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+        <!-- <p class="para">From Blog</p> -->
+        <!-- <br /> -->
+        <!-- <a class="btn" href="/sub_Blog/research.html"><i class="fa fa-angle-left"></i>Back</a> -->
+      </div>
+      <div class="p-3 write-ups wow zoomIn" data-wow-delay="0.1s">
+           <h4 class="text-center">
+            Reward redistribution as Align-RUDDER: learning from a few demonstrations.
+            </h4>
+            <h5 class="text-center">Abstract</h5>
+            <p>
+                Reinforcement to handle difficult tasks with sparse and delayed rewards, learning algorithms demand a large number of samples. Complex tasks are frequently broken down into sub-tasks in a hierarchical manner. A step in the Q-function corresponds to the completion of a sub-task in which the return expectation rises. RUDDER was created to identify these phases and then shift rewards to them, resulting in rapid rewards when sub-tasks are completed. Learning is significantly accelerated since the problem of delayed rewards is alleviated. Current exploration strategies, such as those used in RUDDER, struggle to find episodes with large rewards when dealing with difficult tasks. As a result, we presume that high-reward episodes are presented as demonstrations and do not need to be found through exploration. The number of demonstrations is typically low, and RUDDER's LSTM model does not learn effectively as a deep learning method. As a result, we present Align-RUDDER, which is RUDDER with two major changes. First, Align-RUDDER implies that high-reward episodes are presented as demos, replacing RUDDER's safe exploration and lesson replay buffer. Second, we substitute RUDDER's LSTM model with a profile model derived from multiple demonstration sequence alignment. Bioinformatics has shown that profile models may be built with as little as two demos. Align-RUDDER inherits the concept of reward redistribution, which lowers the time between incentives and hence accelerates learning. On complex artificial tasks with delayed rewards and limited demonstrations, Align-RUDDER surpasses competitors. Align-RUDDER can mine a diamond on the MineCraft obtainDiamond assignment, but only infrequently.
+            </p>
+            <h5 class="text-center">
+                Introduction
+            </h5>
+            <p>
+                An overview of Align-RUDDER1, our new approach. Complex tasks with sparse and delayed rewards are difficult for reinforcement learning systems to learn (Sutton and Barto, 2018; Rahmandad et al., 2009; Luoma et al., 2017). RUDDER (Arjona-Medina et al., 2019) has demonstrated its ability to learn sparse and delayed rewards. RUDDER requires high-reward episodes in order to store them in its lessons replay buffer. Current exploration strategies, on the other hand, struggle to find episodes with large rewards for complex activities. 
+            </p>
+            <p>
+                Teachers, role models, and prototypes provide humans and animals with high reward events. We suppose that high-reward events are used as demonstrations in this setting. As a result, the demos can take the role of RUDDER's safe exploration and lesson replay buffer. Demonstrating is time-consuming for humans and time-consuming for automated exploration tactics, thus there are usually only a handful available. RUDDER's LSTM, on the other hand, as a deep learning method, necessitates a large number of samples. As a result, we substitute a profile model derived from multiple sequence alignment of the demonstrations for RUDDER's LSTM. In bioinformatics, profile models are used to score novel sequences based on their sequence similarity to the matched sequences. The LSTM in RUDDER forecasts an episode's return based on an action-state sub-sequence.
+            </p>
+            
+        
+
+
+
+      </div>
+      <div class="align-content-center mt-2 text-center wow zoomIn" data-wow-delay="0.1s">
+        <a class="btn" href="/sub_Blog/research.html"><i class="fa fa-angle-left"></i>Back</a>
+      </div>
+    </div>
+  </div>
+  <!-- Blog End -->
+
+  <!-- Footer Start -->
+  <div class="footer mt-0 wow fadeIn" data-wow-delay="0.3s">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="footer-info">
+          <h2>Idongesit Koffi</h2>
+          <div class="footer-menu">
+            <p>+234-706-455-1848</p>
+            <p>koffijnr@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="container copyright">
+        <p>
+          &copy; <a href="#">Your Site Name</a>, All Right Reserved | Designed
+          By <a href="https://ezekielelom.com">Ellovick</a>
+        </p>
+        <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+  <!-- Back to top button -->
+  <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Pre Loader -->
+  <!-- <div id="loader" class="show">
+         <div class="loader"></div>
+     </div> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+  <!-- Contact Javascript File -->
+  <script src="mail/jqBootstrapValidation.min.js"></script>
+  <script src="mail/contact.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
