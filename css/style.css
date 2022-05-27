@@ -324,11 +324,11 @@ a:focus {
     padding: 0;
 }
 
-/* .hero .hero-image {
+.hero .hero-image {
     position: relative;
     text-align: right;
     padding-right: 75px;
-} */
+}
 
 .hero .hero-image iframe {
     /* max-width: 100%; */
@@ -343,7 +343,7 @@ a:focus {
     position: relative;
     /* padding-left: 75px; */
     display: flex;
-    top: 5rem;
+    top: -10rem;
     align-items:center;
     justify-content: center;
     flex-direction: column;
