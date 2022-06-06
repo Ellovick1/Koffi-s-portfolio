@@ -1351,6 +1351,11 @@ a:focus {
 /*******************************/
 /******* Testimonial CSS *******/
 /*******************************/
+
+.owl-stage-outer{
+    left: 4.5rem;
+}
+
 .testimonial {
     position: relative;
     margin: 20px 0;
