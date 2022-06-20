@@ -227,11 +227,11 @@ a:focus {
         color: black;
 
     }
-    .navbar .navbar-brand:hover {
+    /* .navbar .navbar-brand:hover {
         color: #ffffff;
         background-color: #111111;
 
-    }
+    } */
     
     .navbar.nav-sticky .navbar-brand {
         /* color: white; */
