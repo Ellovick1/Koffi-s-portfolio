@@ -320,7 +320,7 @@ a:focus {
     margin-bottom: 45px;
     padding: 120px 0 60px 0;
     overflow: hidden;
-    height: 45rem;
+    height: fit-content;
     /* background: linear-gradient(#CBBEAD, rgb(203,190,173)); */
     /* background-color: rgb(43, 41, 38); */
     /* background-repeat: no-repeat; */
@@ -428,6 +428,7 @@ a:focus {
 
     .hero .hero-content {
         padding: 0 15px;
+        top: unset;
     }
 
     .hero .hero-text p {
@@ -478,6 +479,13 @@ a:focus {
     .hero .hero-btn .btn {
         padding: 10px 15px;
         letter-spacing: 1px;
+    }
+
+    .hero .hero-image {
+        position: relative;
+        text-align: right;
+        padding-right: 0;
+        margin-top: 10px;
     }
 }
 
@@ -736,6 +744,20 @@ a:focus {
     padding: 10px;
 }
 
+.timeline-image {
+    height: 50px;
+    width: 50px;
+}
+
+
+
+@media (max-width: 768px) {
+    .experience .timeline .timeline-item.left {
+        left: 0;
+        padding: 0;
+    }
+}
+
 /* .experience .timeline .timeline-item::after {
     content: '';
     position: absolute;
@@ -793,7 +815,8 @@ a:focus {
 } */
 
 .experience .timeline .timeline-text {
-    padding: 50px 90px;
+    /* padding: 50px 90px; */
+    padding: 20px 10px;
     /* background: #f1eeea; */
     background: white;
     position: relative;
@@ -855,7 +878,7 @@ a:focus {
     .experience .timeline .timeline-item.right {
         left: 0%;
         padding: 0;
-        padding-left: 38px;
+        /* padding-left: 38px; */
     }
 
     .experience .timeline .timeline-item.left::after,
@@ -883,6 +906,13 @@ a:focus {
     .experience .timeline .timeline-item.right .timeline-text {
         border-right: none;
         /* border-left: 5px solid #dddddd; */
+    }
+}
+
+@media (max-width: 425px) {
+    .timeline-text > div > h3 {
+        font-size: 1rem;
+        font-weight: 700;
     }
 }
 
